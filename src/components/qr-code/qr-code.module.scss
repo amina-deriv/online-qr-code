@@ -1,0 +1,44 @@
+.card {
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: fit-content;
+    background: white;
+    padding: 1rem 0;
+
+    .qr_code {
+        display: flex;
+        justify-content: center;
+    }
+
+    &:hover {
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+.container {
+    padding: 0.1rem 1rem;
+
+    .title {
+        color: grey;
+        font-size: 1.2rem;
+    }
+
+    .action {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: space-evenly;
+
+        & button {
+            cursor: pointer;
+            color: #ffe6dc;
+            border: none;
+            border-radius: 25px;
+            padding: 0.5rem 2rem;
+            background-color: #5a1a01;
+
+            &:hover, &:active {
+                background-color: #7a2706;
+            }
+        }
+    }
+}
